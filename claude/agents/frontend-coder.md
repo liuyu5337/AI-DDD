@@ -37,3 +37,14 @@ After coding, report:
 - interaction changes
 - tests added/updated
 - known UI risks
+
+skills:
+  - engineering-core
+  - frontend-vue3-elementplus
+  - openapi-first-contract
+  - testing-junit5-vitest
+  - security-baseline
+  - frontend-api-ui-standard
+  - response-error-standard
+  - naming-convention-standard
+  - docs-standard

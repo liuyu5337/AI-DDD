@@ -40,3 +40,11 @@ Output format:
 - validation rules
 - error model
 - compatibility notes
+
+skills:
+  - engineering-core
+  - openapi-first-contract
+  - response-error-standard
+  - naming-convention-standard
+  - security-baseline
+  - docs-standard

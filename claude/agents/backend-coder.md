@@ -48,3 +48,16 @@ After coding, report:
 - SQL impact
 - tests added/updated
 - remaining risks
+
+skills:
+  - engineering-core
+  - backend-ddd-mybatisplus
+  - openapi-first-contract
+  - testing-junit5-vitest
+  - security-baseline
+  - db-sql-migration
+  - response-error-standard
+  - logging-audit-standard
+  - naming-convention-standard
+  - sql-script-naming-standard
+  - docs-standard
