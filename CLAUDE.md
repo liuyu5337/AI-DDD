@@ -1,67 +1,67 @@
-# Project Rules
+# Project Instructions
 
-## Project overview
-- This is an enterprise application with backend, frontend, and docs modules.
-- Backend uses Spring Boot 3.x, frontend uses Vue 3 + Element Plus.
-- Prefer small, reversible changes.
+## Tech Stack
+- Backend: Java 17+, Spring Boot 3.x, MyBatis-Plus
+- Frontend: Vue 3 + Element Plus
+- Architecture: Frontend-backend separation
+- API style: OpenAPI First
+- Design style: Pragmatic DDD
+- DB change management: SQL scripts
+- Backend tests: JUnit 5
+- Frontend tests: Vitest + Vue Test Utils
 
-## Engineering rules
-- Do not rename modules or move directories unless explicitly required.
-- Do not introduce new frameworks without justification.
-- Keep API contracts backward compatible unless task says otherwise.
-- Write or update tests when changing behavior.
-- Update docs when changing public APIs, configs, or scripts.
+## Global Delivery Rules
+- Always understand task scope before editing code.
+- For medium or large work, plan first.
+- For API changes, design the contract first.
+- Keep changes minimal, explicit, and reviewable.
+- Do not claim incomplete or pseudo code as finished implementation.
+- Preserve backward compatibility unless the task explicitly allows breaking changes.
+- Significant changes must include test impact and documentation impact.
 
-## Code style
-- Backend: prefer clear service boundaries, DTO/VO separation, no giant methods.
-- Frontend: keep API calls centralized, avoid business logic inside components when possible.
-- Config: never hardcode secrets, tokens, or passwords.
+## Backend Rules
+- Controllers must stay thin.
+- Business rules must not live in controllers, DTOs, mappers, or persistence DO classes.
+- MyBatis-Plus belongs to infrastructure, not domain.
+- Use pragmatic DDD: apply domain modeling where business complexity exists.
+- Simple CRUD modules should not be over-modeled.
+- Application layer handles use-case orchestration and transaction boundaries.
+- Domain layer handles core business rules, invariants, and state transitions.
+- Infrastructure layer handles Mapper/DO/SQL/integration details.
 
-## Delivery format
-- Always report:
-  1. what changed
-  2. affected files
-  3. risks
-  4. follow-up suggestions
+## OpenAPI Rules
+- Prefer OpenAPI First for new or changed APIs.
+- Define request/response DTOs, validation rules, error models, pagination, and compatibility strategy before implementation.
+- Do not expose persistence objects directly as API contracts.
 
-## Architecture: DDD (Domain-Driven Design)
+## Database Rules
+- Database changes must be delivered as SQL scripts.
+- Every schema/data change must include rollback or mitigation notes.
+- Avoid destructive SQL without explicit warning.
+- Index design must be based on query patterns, not guesswork.
 
-本项目必须遵循 DDD 分层：
+## Frontend Rules
+- Use Vue 3 Composition API.
+- Use Element Plus consistently.
+- Centralize API calls.
+- Avoid heavy business logic in templates.
+- Keep loading/empty/error states explicit.
+- Prefer reusable components over duplicated page logic.
 
-### Layers
+## Testing Rules
+- Meaningful behavior changes should be covered by tests.
+- Backend tests use JUnit 5.
+- Frontend tests use Vitest + Vue Test Utils.
+- Report what was tested, what passed, and what remains untested.
 
-- interfaces（controller）（接口层）
-- application（application service）（应用层）
-- domain（entity / aggregate / repository interface）（领域层）
-- infrastructure（repository impl / db / external api）（基础设施层）
+## Security Rules
+- Validate untrusted input.
+- Do not hardcode secrets.
+- Do not log tokens, passwords, or sensitive data.
+- Security-sensitive changes should be reviewed by security-reviewer.
+- Permission checks must be explicit on sensitive operations.
 
-### Hard Rules(强制规则)：
-
-- Service 分为：
-  - Application Service（编排）
-  - Domain Service（业务规则）
-- Controller 只调用 application service
-- Application service 不包含复杂业务规则
-- 业务规则必须在 domain 层
-- Repository interface 在 domain，impl 在 infrastructure(Repository 接口在 domain，实现在 infrastructure)
-- Repository 接口定义在 domain
-- Repository 实现放在 infrastructure
-- Application Service 负责流程编排
-- Domain Service 负责核心业务规则
-- PO 仅用于 persistence，不允许向上层泄漏
-
-- 禁止：
-  - Controller 写业务逻辑
-  - Service 直接写 SQL
-  - Controller 不允许写业务逻辑
-  - Entity/Aggregate 直接返回给前端
-  - Entity 直接暴露给 Controller
-  - DTO 进入 domain 层
-
-### Naming
-
-- XxxApplicationService
-- XxxDomainService
-- XxxRepository
-- XxxEntity
-- XxxAggregate
+## Documentation Rules
+- Update technical docs when API, behavior, database, deployment, or usage changes.
+- Documentation must align with actual implementation.
+- Include assumptions, affected files/modules, and known risks.
