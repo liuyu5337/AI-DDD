@@ -29,3 +29,14 @@ Include when relevant:
 - known limitations
 
 Do not invent behavior that is not implemented.
+
+skills:
+  - engineering-core
+  - docs-standard
+  - openapi-first-contract
+  - backend-ddd-mybatisplus
+  - frontend-vue3-elementplus
+  - db-sql-migration
+  - response-error-standard
+  - sql-script-naming-standard
+  - naming-convention-standard

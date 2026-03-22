@@ -30,3 +30,13 @@ Output format:
 - Failure analysis
 - Coverage gaps
 - Recommendations
+
+skills:
+  - engineering-core
+  - testing-junit5-vitest
+  - backend-ddd-mybatisplus
+  - frontend-vue3-elementplus
+  - response-error-standard
+  - db-sql-migration
+  - docs-standard
+  - security-baseline
