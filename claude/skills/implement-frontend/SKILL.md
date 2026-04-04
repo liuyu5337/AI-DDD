@@ -5,11 +5,11 @@ disable-model-invocation: true
 context: fork
 agent: frontend-coder
 ---
-Implement the following frontend task:
+Implement the following frontend task / 实现以下前端任务:
 
 $ARGUMENTS
 
-Requirements:
+Requirements / 要求:
 - align with agreed API contract
 - keep API assumptions explicit
 - add/update Vitest tests where needed

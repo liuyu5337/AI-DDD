@@ -5,7 +5,7 @@ disable-model-invocation: true
 context: fork
 agent: reviewer
 ---
-Review the following changes or scope:
+Review the following changes or scope / review 以下改动范围:
 
 $ARGUMENTS
 

@@ -4,9 +4,9 @@ description: OpenAPI-first API design rules for frontend-backend separated syste
 disable-model-invocation: true
 user-invocable: false
 ---
-# OpenAPI First Rules
+# OpenAPI First Rules / OpenAPI 先行规则
 
-For new or changed APIs, define first:
+For new or changed APIs, define first / 新增或修改接口时先定义:
 - endpoint purpose
 - request model
 - response model
@@ -16,9 +16,9 @@ For new or changed APIs, define first:
 - idempotency requirements where relevant
 - compatibility strategy
 
-Rules:
-- Prefer stable contracts.
-- Keep field naming consistent.
-- Do not expose persistence DO or MyBatis-Plus models directly.
-- Make integration assumptions explicit.
-- Document breaking changes clearly.
+Rules / 规则:
+- Prefer stable contracts / 优先稳定合同
+- Keep field naming consistent / 字段命名一致
+- Do not expose persistence DO or MyBatis-Plus models directly
+- Make integration assumptions explicit / 明确集成假设
+- Document breaking changes clearly / 明确记录破坏性变更

@@ -5,11 +5,11 @@ context: fork
 agent: frontend-coder
 disable-model-invocation: true
 ---
-Scaffold a frontend module for the following business requirement:
+Scaffold a frontend module for the following business requirement / 为以下业务需求生成前端模块骨架:
 
 $ARGUMENTS
 
-Project constraints:
+Project constraints / 项目约束:
 - Vue 3
 - Composition API
 - Element Plus
@@ -18,7 +18,7 @@ Project constraints:
 - Stable response envelope handling
 - Vitest + Vue Test Utils
 
-You must generate or propose, when appropriate:
+You must generate or propose / 你应生成或提出:
 1. Module responsibility summary
 2. Recommended directory structure
 3. Page structure for search area, action area, table area, and pagination area
@@ -32,16 +32,16 @@ You must generate or propose, when appropriate:
 11. Vitest + Vue Test Utils test skeletons
 12. Notes about API assumptions, loading/empty/error states, and reusable component opportunities
 
-Hard constraints:
-- Do not place heavy business logic in templates.
-- Do not scatter API requests across unrelated components.
-- Keep index pages focused on composition.
-- Prefer reusable components when patterns repeat.
-- Keep loading, empty, and error states explicit.
-- Keep field names aligned with the API contract or document mapping clearly.
-- Do not silently invent backend fields or behaviors.
+Hard constraints / 强约束:
+- Do not place heavy business logic in templates
+- Do not scatter API requests across unrelated components
+- Keep index pages focused on composition
+- Prefer reusable components when patterns repeat
+- Keep loading, empty, and error states explicit
+- Keep field names aligned with the API contract or document mapping clearly
+- Do not silently invent backend fields or behaviors
 
-Required output format:
+Required output format / 输出格式:
 - module summary
 - directory structure
 - API module draft

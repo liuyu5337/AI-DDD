@@ -1,0 +1,5 @@
+使用 springboot-ddd-module-scaffold 生成客户管理模块骨架：
+- 支持分页查询、详情、新增、编辑、启用、停用、删除
+- 使用统一响应体与错误码
+- 需要 SQL schema/data/rollback 脚本
+- 需要 JUnit 5 测试骨架

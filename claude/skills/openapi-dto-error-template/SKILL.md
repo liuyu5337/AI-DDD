@@ -5,11 +5,11 @@ context: fork
 agent: api-architect
 disable-model-invocation: true
 ---
-Generate an OpenAPI-first contract and DTO/error templates for the following requirement:
+Generate an OpenAPI-first contract and DTO/error templates for the following requirement / 为以下需求生成 OpenAPI 合同与 DTO/错误码模板:
 
 $ARGUMENTS
 
-Project constraints:
+Project constraints / 项目约束:
 - OpenAPI First
 - Unified response envelope
 - Stable semantic error codes
@@ -17,7 +17,7 @@ Project constraints:
 - Spring Boot 3.x backend
 - Vue 3 frontend
 
-You must generate or propose, when appropriate:
+You must generate or propose / 你应生成或提出:
 1. Module or endpoint responsibility summary
 2. Endpoint list and HTTP methods
 3. Request DTO draft
@@ -30,15 +30,15 @@ You must generate or propose, when appropriate:
 10. Compatibility notes and assumptions
 11. Frontend integration notes
 
-Hard constraints:
-- Do not expose persistence DO or MyBatis-Plus types directly.
-- Do not leave field meaning ambiguous.
-- Do not invent hidden backend behavior without stating assumptions.
-- Keep field naming stable and semantically clear.
-- Separate shared error codes from module-specific error codes.
-- For paginated APIs, use project-defined page response structures, not framework-native page objects.
+Hard constraints / 强约束:
+- Do not expose persistence DO or MyBatis-Plus types directly
+- Do not leave field meaning ambiguous
+- Do not invent hidden backend behavior without stating assumptions
+- Keep field naming stable and semantically clear
+- Separate shared error codes from module-specific error codes
+- For paginated APIs, use project-defined page response structures
 
-Required output format:
+Required output format / 输出格式:
 - summary
 - endpoint draft
 - request DTO template

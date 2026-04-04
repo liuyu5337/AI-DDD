@@ -1,0 +1,5 @@
+This package contains both:
+- .claude/          (actual project folder)
+- claude/   (non-hidden copy for easy browsing on macOS Finder)
+
+真正放入项目根目录时，请使用 `.claude/`。

@@ -5,11 +5,11 @@ context: fork
 agent: backend-coder
 disable-model-invocation: true
 ---
-Scaffold a backend module for the following business requirement:
+Scaffold a backend module for the following business requirement / 为以下业务需求生成后端模块骨架:
 
 $ARGUMENTS
 
-Project constraints:
+Project constraints / 项目约束:
 - Java 17+
 - Spring Boot 3.x
 - MyBatis-Plus
@@ -18,7 +18,7 @@ Project constraints:
 - SQL-script-based DB changes
 - JUnit 5
 
-You must generate or propose, when appropriate:
+You must generate or propose / 你应生成或提出:
 1. Module responsibility summary
 2. Suggested package structure
 3. OpenAPI contract draft
@@ -35,17 +35,17 @@ You must generate or propose, when appropriate:
 14. JUnit 5 test skeletons
 15. Notes about assumptions, risks, and areas requiring manual refinement
 
-Hard constraints:
-- Do not over-model simple CRUD requirements.
-- Do not leak MyBatis-Plus Page/Wrapper/DO objects into API contracts.
-- Do not put business rules into controllers, DTOs, Mapper interfaces, or DO classes.
-- Keep controllers thin.
-- Keep use-case orchestration in application layer.
-- Keep domain rules in domain layer only where complexity exists.
-- Deliver SQL changes as scripts, not as implicit ORM migration.
-- Prefer code that matches the existing project style over abstract perfection.
+Hard constraints / 强约束:
+- Do not over-model simple CRUD requirements
+- Do not leak MyBatis-Plus Page/Wrapper/DO objects into API contracts
+- Do not put business rules into controllers, DTOs, Mapper interfaces, or DO classes
+- Keep controllers thin
+- Keep use-case orchestration in application layer
+- Keep domain rules in domain layer only where complexity exists
+- Deliver SQL changes as scripts
+- Prefer code that matches the existing project style over abstract perfection
 
-Required output format:
+Required output format / 输出格式:
 - module summary
 - package structure
 - API draft

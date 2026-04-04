@@ -5,7 +5,7 @@ disable-model-invocation: true
 context: fork
 agent: security-reviewer
 ---
-Perform a security review for:
+Perform a security review for / 对以下内容做安全审查:
 
 $ARGUMENTS
 

@@ -5,7 +5,7 @@ disable-model-invocation: true
 context: fork
 agent: tester
 ---
-Test the following feature or changed area:
+Test the following feature or changed area / 测试以下功能或改动范围:
 
 $ARGUMENTS
 

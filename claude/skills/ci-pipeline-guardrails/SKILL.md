@@ -5,11 +5,11 @@ context: fork
 agent: tester
 disable-model-invocation: true
 ---
-Prepare CI pipeline guardrails and quality-gate guidance for the following change, module, or project:
+Prepare CI pipeline guardrails and quality-gate guidance for the following change, module, or project / 为以下改动、模块或项目生成 CI 门禁与检查清单:
 
 $ARGUMENTS
 
-Project expectations:
+Project expectations / 项目期望:
 - Spring Boot 3.x + Java 17 backend
 - MyBatis-Plus infrastructure
 - Vue 3 + Element Plus frontend
@@ -18,7 +18,7 @@ Project expectations:
 - JUnit 5 + Vitest + Vue Test Utils
 - Security-sensitive changes should be reviewable
 
-You must generate, when appropriate:
+You must generate / 你必须生成:
 1. Backend build and test gate suggestions
 2. Frontend build and test gate suggestions
 3. API contract and DTO consistency checks
@@ -29,14 +29,14 @@ You must generate, when appropriate:
 8. Pre-release checklist
 9. Known-risk reminder items
 
-Hard constraints:
-- Do not mark checks as passed without evidence.
-- Keep gates practical and executable.
-- Distinguish mandatory gates from recommended checks.
-- Make SQL, API, test, and documentation completeness explicit.
-- Mention gaps honestly when evidence is missing.
+Hard constraints / 强约束:
+- Do not mark checks as passed without evidence
+- Keep gates practical and executable
+- Distinguish mandatory gates from recommended checks
+- Make SQL, API, test, and documentation completeness explicit
+- Mention gaps honestly when evidence is missing
 
-Required output format:
+Required output format / 输出格式:
 - mandatory gates
 - recommended checks
 - pre-merge checklist

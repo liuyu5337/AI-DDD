@@ -1,6 +1,6 @@
 {
-    "includeCoAuthoredBy": false,
-    "permissions": {
-      "defaultMode": "acceptEdits"
-    }
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "defaultMode": "acceptEdits"
   }
+}

@@ -4,16 +4,16 @@ description: SQL script directory and naming conventions for schema/data/rollbac
 disable-model-invocation: true
 user-invocable: false
 ---
-# SQL Script Naming Standard
+# SQL Script Naming Standard / SQL 脚本命名规范
 
-## Directory Suggestion
+## Directory Suggestion / 目录建议
 - db/schema
 - db/data
 - db/rollback
 
-## Naming Rules
+## Naming Rules / 命名规则
 - Forward scripts: VYYYYMMDD_NNN_description.sql
 - Rollback scripts: RYYYYMMDD_NNN_description.sql
-- Use action-oriented names such as create_table, add_index, init_dict.
-- Separate schema changes from data initialization when possible.
-- High-risk scripts must include execution notes and rollback guidance.
+- Use action-oriented names such as create_table, add_index, init_dict
+- Separate schema changes from data initialization when possible
+- High-risk scripts must include execution notes and rollback guidance / 高风险脚本要写执行与回滚说明

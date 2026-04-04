@@ -5,11 +5,11 @@ disable-model-invocation: true
 context: fork
 agent: planner
 ---
-Plan the following feature or task:
+Plan the following feature or task / 规划以下需求或任务:
 
 $ARGUMENTS
 
-Required output:
+Required output / 必须输出:
 - goal
 - scope
 - assumptions

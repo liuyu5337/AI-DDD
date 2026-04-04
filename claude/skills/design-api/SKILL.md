@@ -5,7 +5,7 @@ disable-model-invocation: true
 context: fork
 agent: api-architect
 ---
-Design the API contract for:
+Design the API contract for / 设计以下接口合同:
 
 $ARGUMENTS
 

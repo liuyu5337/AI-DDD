@@ -5,7 +5,7 @@ disable-model-invocation: true
 context: fork
 agent: db-helper
 ---
-Prepare SQL change guidance for:
+Prepare SQL change guidance for / 为以下变更准备 SQL 方案:
 
 $ARGUMENTS
 
