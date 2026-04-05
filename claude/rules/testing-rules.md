@@ -1,20 +1,21 @@
-# Testing Rules
+# Testing Rules / 测试规则
 
 ## General
-- meaningful behavior changes require tests or explicit explanation why not
-- tests should be focused and maintainable
-- cover happy path, validation failure, and important edge cases
+- Add or update tests for meaningful behavior changes.
+- Prefer targeted, maintainable tests over large brittle tests.
+- Cover success paths, validation failures, and important edge cases.
 
 ## Backend
-- JUnit 5
-- prioritize application service and domain rule coverage
-- add controller / integration tests when contract behavior matters
+- Use JUnit 5.
+- Prioritize application-service behavior and domain rules.
+- Add controller/integration tests when contract behavior is important.
 
 ## Frontend
-- Vitest + Vue Test Utils
-- cover render states, interactions, validation, and critical component behavior
+- Use Vitest + Vue Test Utils.
+- Cover rendering states, interaction paths, validation, and critical component behavior.
 
-## Delivery output
+## Reporting
+Completion reports must state:
 - what was tested
 - what passed or failed
 - what remains untested

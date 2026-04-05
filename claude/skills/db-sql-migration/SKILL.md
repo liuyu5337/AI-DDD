@@ -1,22 +1,26 @@
 ---
 name: db-sql-migration
-description: SQL-script based schema/data change rules for backend delivery
+description: SQL-script-based schema/data change execution checklist
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# DB SQL Migration / 数据库变更规范
+# SQL Change Checklist / SQL 变更清单
 
-## Core rules
-- use reviewed SQL scripts for schema/data changes
-- separate schema change and data fix scripts where practical
-- explain rollback or mitigation
-- avoid destructive changes without explicit warning
+Source of truth / 规则来源:
+- `.claude/rules/database-rules.md`
 
-## Review focus
-- naming
-- indexes
-- default values
+## Always describe / 必须说明
+- schema changes
+- data changes
+- execution order
+- rollback or mitigation
+- index impact
+- compatibility impact
+
+## Review points / 审核点
 - nullability
-- constraints
-- compatibility risk
+- default values
+- uniqueness
+- large-table impact
+- high-risk DDL or DML

@@ -1,18 +1,18 @@
 ---
 name: ci-pipeline-guardrails
-description: CI pipeline minimum quality gates and pre-release guardrails
+description: CI verification checklist aligned with delivery and testing rules
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# CI Pipeline Guardrails / CI 流水线门禁
+# CI Guardrails Checklist / CI 护栏清单
 
-## Minimum gates
-- build passes
-- relevant tests pass
-- static checks pass if configured
-- package artifact is reproducible
-- version / changelog updated when needed
+Source of truth / 规则来源:
+- `.claude/rules/delivery-rules.md`
+- `.claude/rules/testing-rules.md`
 
-## Release-minded rule
-- do not bypass failing gates without explicit reason
+Check:
+- minimal meaningful verification scope
+- failing checks explained
+- flaky tests called out
+- missing validation explicitly noted

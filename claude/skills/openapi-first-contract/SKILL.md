@@ -1,25 +1,22 @@
 ---
 name: openapi-first-contract
-description: OpenAPI-first API design rules for frontend-backend separated systems
+description: Execution checklist for designing or aligning OpenAPI-first contracts
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# OpenAPI First Rules / OpenAPI 先行规则
+# OpenAPI Contract Checklist / OpenAPI 合同检查清单
 
-For new or changed APIs, define first / 新增或修改接口时先定义:
-- endpoint purpose
-- request model
-- response model
-- validation rules
-- error codes / error structure
-- pagination/filter/sort rules
-- idempotency requirements where relevant
-- compatibility strategy
+Source of truth / 规则来源:
+- `.claude/rules/api-contract-rules.md`
+- `.claude/rules/response-error-rules.md`
 
-Rules / 规则:
-- Prefer stable contracts / 优先稳定合同
-- Keep field naming consistent / 字段命名一致
-- Do not expose persistence DO or MyBatis-Plus models directly
-- Make integration assumptions explicit / 明确集成假设
-- Document breaking changes clearly / 明确记录破坏性变更
+## When using this skill / 使用方式
+Before coding or reviewing an API change, check:
+1. What is the endpoint purpose?
+2. What are the request and response DTOs?
+3. What validation rules apply?
+4. How are pagination, filter, and sort represented?
+5. What error codes and error envelope are returned?
+6. What compatibility or migration note is needed?
+7. What frontend assumption must be stated explicitly?

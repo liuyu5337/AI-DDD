@@ -1,20 +1,22 @@
-# Naming Rules
+# Naming Rules / 命名规则
 
-## General
-- business names first, framework names second
-- prefer explicit names over abstract names
-- same concept should use same name across API / service / DB / UI when practical
+## Package naming
+- Use lowercase package names.
+- Organize by business domain and layer.
+- Avoid vague names such as `misc`, `temp`, `util2`.
 
-## Backend
-- Request / Response DTO names should be explicit
-- Domain names should reflect business intent
-- DO / Entity / Mapper naming should clearly indicate persistence role
+## Class naming
+- `XxxController`
+- `XxxAppService`
+- `XxxDomainService`
+- `XxxRepository`
+- `XxxRepositoryImpl`
+- `XxxDO`
+- `XxxMapper`
+- `XxxCreateRequest`, `XxxQueryRequest`
+- `XxxDetailResponse`, `XxxPageResponse`
+- `XxxAssembler` or `XxxConverter`
 
-## Frontend
-- component names should reflect page/module purpose
-- composables should use `useXxx`
-- API functions should use resource-oriented naming
-
-## SQL
-- scripts should follow sortable naming conventions
-- table / column names should be stable and consistent
+## Method naming
+- Use explicit business-oriented names.
+- Avoid vague names such as `process`, `handleData`, `doStuff`.

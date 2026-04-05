@@ -1,17 +1,17 @@
 ---
 name: branching-release-policy
-description: Branching and release policy guidance for collaborative delivery
+description: Branch and release planning checklist aligned with delivery rules
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# Branching and Release Policy / 分支与发布策略
+# Branch and Release Checklist / 分支与发布清单
 
-## Branching
-- use clear and sortable branch names
-- separate feature / bugfix / hotfix / release branches
-- keep branch names tied to task identifiers where possible
+Source of truth / 规则来源:
+- `.claude/rules/delivery-rules.md`
 
-## Release
-- define merge path and release path
-- important releases should keep rollback visibility
+Use this skill to plan:
+- recommended branch naming
+- release scope
+- compatibility consideration
+- rollback readiness

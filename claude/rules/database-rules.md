@@ -1,21 +1,18 @@
-# Database Rules
+# Database Rules / 数据库规则
 
-## Change management
-- schema changes use reviewed SQL scripts
-- explain scope, risk, rollback, and data impact
-- avoid destructive SQL without explicit warning
-- distinguish schema SQL and data fix SQL
+## Delivery format
+- Schema and data changes are delivered as SQL scripts.
+- Distinguish schema change, data change, execution order, rollback, and compatibility notes.
 
-## Modeling
-- naming must be clear and stable
-- nullability, defaults, constraints, and unique keys should be deliberate
-- indexes should come from real query patterns
-- keep persistence model aligned with pragmatic DDD boundaries
+## Risk control
+- Destructive SQL requires explicit warning.
+- Explain rollback or mitigation strategy.
+- Consider large-table impact, index rebuild cost, lock risk, and execution window where relevant.
+- Index design must come from real query patterns.
 
-## Delivery output
-For each SQL change mention:
-- affected tables
-- DDL / DML intent
-- index impact
-- compatibility risk
-- rollback or mitigation
+## Modeling boundary
+- Keep persistence DO separate from API DTO and from domain concepts when necessary.
+- Do not let persistence shortcuts distort business semantics.
+## Naming
+- SQL script names must be sortable, explicit, and review-friendly.
+- Include change intent in the file name.

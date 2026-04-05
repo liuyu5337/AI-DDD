@@ -1,42 +1,30 @@
-# AI-DDD Claude Package (Enhanced)
+# AI-DDD v0.0.6 rules-ready package
 
-This package is an enhanced `.claude/` template rebuilt from the public repository structure you shared and then upgraded with an explicit `rules/` governance layer.
+This package is rebuilt from the public `v0.0.6` structure of `liuyu5337/AI-DDD`, and keeps the original style:
 
-## What is included
-- revised `CLAUDE.md`
-- revised `agents/`
-- full `skills/` directory skeleton aligned with your current naming
-- new `rules/` directory for global governance
-- selected `checklists/`, `examples/`, and `templates/`
+- Agents: English filename + English `name`
+- Skills: directory-based `SKILL.md`
+- Daily interaction: Chinese recommended
+- Mixed Chinese + English wording where clarity helps
 
-## Why this version
-Your current design already has a good separation between:
-- **agents** = task roles
-- **skills** = reusable capability/rule bundles
+## What changed
 
-The main gap was:
-- many global constraints were still living inside skills
-- there was no explicit **rules layer** to act as repository-wide policy
+This package adds a dedicated `rules/` layer and makes boundaries explicit:
 
-This package adds that missing layer and makes the precedence explicit.
+- `CLAUDE.md`: repository-level contract and precedence
+- `rules/`: global repository governance only
+- `agents/`: role responsibilities, decision focus, required outputs
+- `skills/`: execution methods, checklists, templates, and command wrappers
 
-## Suggested load / precedence
-1. `CLAUDE.md`
-2. `rules/*.md`
-3. `agents/*.md`
-4. `skills/**/SKILL.md`
-5. task-specific templates / checklists / examples
+## Boundary contract
 
-## Recommended workflow
-- `/plan-feature`
-- `/design-api`
-- `/springboot-ddd-module-scaffold`
-- `/implement-backend`
-- `/prepare-sql-change`
-- `/frontend-module-scaffold`
-- `/implement-frontend`
-- `/run-test-check`
-- `/review-changes`
-- `/security-check`
-- `/write-tech-doc`
-- `/commit-pr-standard`
+- Do **not** duplicate the same MUST / MUST NOT across `rules`, `agents`, and `skills`.
+- Global constraints live in `rules`.
+- Agents tell Claude **who should do what**.
+- Skills tell Claude **how to do that kind of work** or provide a user-invocable entry.
+
+## How to use
+
+1. Copy `.claude/` into your repository root.
+2. If Finder does not show hidden folders, inspect `claude/`.
+3. Use the suggested workflow in `.claude/CLAUDE.md`.

@@ -1,27 +1,24 @@
-# Backend Rules
+# Backend Rules / 后端规则
 
 ## Tech baseline
 - Java 17+
 - Spring Boot 3.x
 - MyBatis-Plus
-- pragmatic DDD
+- Pragmatic DDD
 
-## Layering
-- Interface layer: controller + request/response DTO + external boundary handling
-- Application layer: orchestration, transaction, command/query coordination
-- Domain layer: business rules, invariants, state transitions
-- Infrastructure layer: mapper, DO, persistence, remote integration
+## Pragmatic DDD boundary
+- Use richer domain modeling where business complexity justifies it.
+- For simple CRUD, avoid unnecessary aggregates or abstraction.
+- Keep layering explicit: interface, application, domain, infrastructure.
+
+## Layer responsibilities
+- Interface: controller + request/response DTO + boundary handling
+- Application: orchestration, transaction, command/query coordination
+- Domain: business rules, invariants, state transitions
+- Infrastructure: mapper, DO, SQL, external integration
 
 ## Hard constraints
-- controllers stay thin
-- no heavy business logic in controller / DTO / mapper / DO
-- MyBatis-Plus details stay in infrastructure
-- domain modeling should match complexity; do not over-model trivial CRUD
-- transaction boundaries should usually stay in application layer
-- explicit mapping between DTO / domain / persistence objects
-
-## Quality defaults
-- new write actions should consider idempotency
-- sensitive actions should consider audit logging
-- errors should use global handling
-- meaningful behavior changes should add or update tests
+- No business rules in controllers, DTOs, mapper interfaces, SQL mapping, or DO classes.
+- No MyBatis-Plus leakage into API contracts or meaningful domain abstractions.
+- Controllers stay thin.
+- Transactions belong in the application layer unless there is a very explicit reason otherwise.

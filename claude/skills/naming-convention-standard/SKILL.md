@@ -1,22 +1,17 @@
 ---
 name: naming-convention-standard
-description: "Naming consistency rules for backend, frontend, API, and SQL artifacts"
+description: Naming checklist aligned with repository-wide naming rules
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# Naming Convention Standard / 命名规范
+# Naming Checklist / 命名清单
 
-## General
-- prefer explicit business names
-- the same concept should keep the same name across layers when possible
-- avoid unclear abbreviations
+Source of truth / 规则来源:
+- `.claude/rules/naming-rules.md`
 
-## Backend
-- XxxCreateRequest / XxxUpdateRequest / XxxQueryRequest
-- XxxResponse / XxxPageResponse
-- XxxApplicationService / XxxDomainService if truly needed
-
-## Frontend
-- useXxx composables
-- XxxPage / XxxDialog / XxxForm component naming
+Use this skill to validate:
+- package naming
+- DTO / DO / repository naming
+- controller / app service naming
+- method names with explicit business semantics

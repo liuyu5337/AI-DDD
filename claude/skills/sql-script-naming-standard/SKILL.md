@@ -1,19 +1,21 @@
 ---
 name: sql-script-naming-standard
-description: Sortable SQL script naming conventions
+description: SQL script naming checklist aligned with database and naming rules
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# SQL Script Naming Standard / SQL 脚本命名规范
+# SQL Naming Checklist / SQL 命名清单
 
-## Recommendation
-Use sortable names such as:
-- `V20260405_001__customer_table.sql`
-- `V20260405_002__customer_index.sql`
-- `D20260405_001__fix_customer_status.sql`
+Source of truth / 规则来源:
+- `.claude/rules/database-rules.md`
+- `.claude/rules/naming-rules.md`
 
-## Rules
-- schema and data scripts should be distinguishable
-- names should reflect purpose
-- sequence should be sortable
+Recommended naming pattern:
+- `YYYYMMDDHHmm__module__change_intent.sql`
+
+Checklist:
+- sortable by time
+- module visible
+- intent visible
+- not vague like `fix.sql` or `update.sql`

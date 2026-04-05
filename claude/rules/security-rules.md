@@ -1,27 +1,19 @@
-# Security Rules
+# Security Rules / 安全规则
 
-## Always check
+Always review:
 - authentication
 - authorization
 - input validation
-- SQL / command / expression / template injection
-- XSS / CSRF / SSRF where relevant
-- file upload / download safety
+- SQL / command / expression injection risk
+- XSS / CSRF / SSRF risk where relevant
+- file upload/download safety
 - sensitive data exposure
-- secret leakage in code, config, log
-- auditability of critical actions
+- secret handling
+- auditability for critical actions
 
-## Hard constraints
-- never hardcode secrets
-- never log passwords, tokens, or sensitive personal data
-- verify permission checks on sensitive operations
-- validate untrusted input
-- state security assumptions explicitly
-
-## Sensitive operations
-For create/update/delete/import/export/approve/login/permission-change operations, prefer:
-- permission checks
-- audit trail
-- requestId / traceId
-- operator identity
-- result and failure reason
+## Non-negotiables
+- Never hardcode secrets.
+- Never log passwords, tokens, keys, or sensitive personal data.
+- Validate untrusted input.
+- Sensitive operations must have explicit permission checks.
+- State security assumptions when they affect design or review conclusions.

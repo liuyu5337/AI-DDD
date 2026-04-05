@@ -1,21 +1,21 @@
-# Logging and Audit Rules
+# Logging and Audit Rules / 日志与审计规则
 
 ## Logging
-- logs should have diagnostic value
-- include requestId / traceId when possible
-- include business identifiers when useful
-- avoid noisy logs without actionability
-- never log secrets or sensitive data
+- Log with useful business context.
+- Include requestId / traceId when possible.
+- Prefer meaningful identifiers such as orderNo, billNo, customerId when relevant.
+- Avoid noisy logs with no diagnostic value.
+- Never log secrets or sensitive personal data.
 
 ## Audit
-Sensitive operations should be auditable:
+Sensitive operations should be auditable, including:
 - create / update / delete
-- approve / reject
+- approval / reject
 - import / export
 - permission changes
 - login or security-sensitive actions
 
-## Recommended audit fields
+Audit records should capture where relevant:
 - operator
 - operation time
 - module
@@ -23,4 +23,4 @@ Sensitive operations should be auditable:
 - action type
 - result
 - failure reason
-- requestId / traceId
+- requestId

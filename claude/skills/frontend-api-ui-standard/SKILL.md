@@ -1,18 +1,20 @@
 ---
 name: frontend-api-ui-standard
-description: Frontend API integration and UI consistency rules
+description: Frontend API-layer and UI consistency checklist
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# Frontend API + UI Standard / 前端接口与界面规范
+# Frontend API and UI Checklist / 前端 API 与 UI 清单
 
-## API integration
-- centralize request functions
-- explicit request / response mapping
-- loading / error / retry handling should be visible
+Source of truth / 规则来源:
+- `.claude/rules/frontend-rules.md`
+- `.claude/rules/response-error-rules.md`
 
-## UI consistency
-- same interaction pattern should use same component pattern
-- destructive actions need confirmation
-- permission-limited actions should have clear disabled/hidden behavior
+## Check / 检查
+- request code centralized
+- request/response typing consistent
+- list page structure consistent
+- form validation explicit
+- destructive actions confirmed
+- error feedback consistent

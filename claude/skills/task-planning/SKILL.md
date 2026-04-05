@@ -1,25 +1,32 @@
 ---
 name: task-planning
-description: Requirement decomposition and pragmatic engineering planning guidance
+description: Planning checklist for feature analysis and task decomposition
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# Task Planning / 任务规划
+# Task Planning Method / 任务规划方法
 
-## Required planning dimensions
-- goal
-- scope
-- assumptions
-- affected modules/files
-- API impact
-- SQL impact
+Source of truth / 规则来源:
+- `.claude/rules/engineering-rules.md`
+- `.claude/rules/delivery-rules.md`
+
+## Planning output should include / 规划输出应包含
+1. goal and value
+2. scope and non-goals
+3. assumptions
+4. backend impact
+5. frontend impact
+6. API impact
+7. SQL impact
+8. test impact
+9. documentation impact
+10. risks and execution order
+
+For medium or large tasks, split clearly into:
+- API design
+- backend implementation
+- frontend implementation
+- SQL changes
 - tests
-- docs
-- risks
-- rollout / rollback concerns
-
-## Rules
-- separate planning from coding
-- plans should be specific and executable
-- avoid vague task decomposition
+- documentation

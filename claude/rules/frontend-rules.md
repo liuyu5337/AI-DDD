@@ -1,27 +1,18 @@
-# Frontend Rules
+# Frontend Rules / 前端规则
 
 ## Baseline
 - Vue 3
 - Composition API
 - Element Plus
 
-## Structure
-- views focus on composition and interaction flow
-- reusable components for repeated patterns
-- composables for reusable state / behavior
-- API calls must be centralized
+## UI and state
+- Pages compose behavior; do not bury heavy business logic in templates.
+- Loading, empty, error, and permission states must be explicit.
+- Destructive actions require confirmation.
+- Repeated patterns should be extracted into reusable components or composables.
 
-## UX rules
-- loading / empty / error / no-permission states must be explicit
-- destructive actions require confirmation
-- form validation messages must be clear and consistent
-- table column names, placeholders, and buttons should use stable wording
-
-## Integration
-- do not silently invent backend behavior
-- keep route / page / permission assumptions explicit
-- distinguish display model from raw API model when needed
-
-## Maintainability
-- avoid heavy business logic in templates
-- avoid unrelated UI refactors in delivery tasks
+## API integration
+- API calls must be centralized in dedicated modules.
+- Do not scatter request code across page components.
+- Request/response typing and naming must stay consistent with agreed contracts.
+- Do not silently change backend assumptions in UI code.

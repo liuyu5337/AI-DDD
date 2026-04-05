@@ -1,21 +1,17 @@
 ---
 name: springboot-ddd-module-scaffold
-description: Scaffold a Spring Boot 3 + pragmatic DDD backend module skeleton
+description: Generate a Spring Boot pragmatic-DDD module scaffold aligned with repository conventions
 disable-model-invocation: true
 context: fork
 agent: backend-coder
 ---
 
-# Skill Usage
-
-## Scaffold the following backend module / 生成以下后端模块骨架
-
+Scaffold the following backend module / 生成以下后端模块脚手架:
 $ARGUMENTS
 
-## Requirements / 要求
-- explicit layering
-- thin controller
-- application orchestration
-- optional domain rules where complexity exists
-- infrastructure keeps MyBatis-Plus details
-- add module review checklist
+Expected output:
+- recommended package structure
+- controller / app service / domain / infrastructure split
+- DTO / assembler / repository suggestions
+- test file suggestion
+- SQL script impact note if relevant

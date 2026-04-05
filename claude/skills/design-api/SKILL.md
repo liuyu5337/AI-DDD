@@ -6,13 +6,10 @@ context: fork
 agent: api-architect
 ---
 
-# Skill Usage
-
-## Design the API contract for / 设计以下接口合同
-
+Design the API contract for / 设计以下接口合同:
 $ARGUMENTS
 
-## Required output
+Required output:
 - API overview
 - endpoint list
 - request models
@@ -20,4 +17,4 @@ $ARGUMENTS
 - validation rules
 - error model
 - compatibility notes
-- integration notes
+- frontend integration notes

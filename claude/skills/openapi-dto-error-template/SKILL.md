@@ -1,19 +1,38 @@
 ---
 name: openapi-dto-error-template
-description: OpenAPI + DTO + unified response and error templates
+description: Reusable template for API overview, DTOs, validation, and error model
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# OpenAPI DTO Error Template / 接口 DTO 与错误模板
+# API Output Template / API 输出模板
 
-## Use for
-- request DTO template
-- response DTO template
-- page response template
-- unified error response template
+Use this template when producing API design output:
 
-## Rules
-- field meaning must be explicit
-- response DTO should not mirror persistence objects mechanically
-- include requestId in error envelope when appropriate
+## API overview
+- purpose
+- actors
+- compatibility notes
+
+## Endpoint list
+- method + path
+- summary
+- permission / auth assumption
+
+## Request models
+- field
+- type
+- required
+- meaning
+- validation
+
+## Response models
+- field
+- type
+- meaning
+
+## Error model
+- error code
+- scenario
+- message
+- frontend handling note

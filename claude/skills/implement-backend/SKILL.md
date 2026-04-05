@@ -6,14 +6,11 @@ context: fork
 agent: backend-coder
 ---
 
-# Skill Usage
-
-## Implement the following backend task / 实现以下后端任务
-
+Implement the following backend task / 实现以下后端任务:
 $ARGUMENTS
 
-## Requirements / 要求
-- follow OpenAPI-first contract
+Requirements / 要求:
+- follow approved API contract
 - keep controllers thin
 - use pragmatic DDD
 - keep MyBatis-Plus in infrastructure

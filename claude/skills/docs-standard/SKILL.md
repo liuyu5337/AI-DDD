@@ -1,23 +1,18 @@
 ---
 name: docs-standard
-description: Technical documentation expectations for implementation-aligned delivery
+description: Documentation execution checklist aligned with repository-wide docs rules
 disable-model-invocation: true
 user-invocable: false
 ---
 
-# Documentation Standard / 文档规范
+# Documentation Checklist / 文档清单
 
-## Core rules
-- documentation must match implementation
-- describe scope and non-goals clearly
-- note API, SQL, test, and deployment impact when relevant
-- explicitly state assumptions and limitations
-- do not invent behavior not implemented
+Source of truth / 规则来源:
+- `.claude/rules/docs-rules.md`
 
-## Recommended sections
-- background
-- scope
-- design choice
-- impact analysis
-- operation / rollback
-- known limitations
+Use this skill to ensure the document is:
+- accurate
+- structured
+- concise
+- implementation-aligned
+- explicit about API / SQL / test / deployment impact when relevant

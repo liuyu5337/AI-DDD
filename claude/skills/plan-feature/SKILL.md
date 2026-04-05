@@ -6,17 +6,15 @@ context: fork
 agent: planner
 ---
 
-# Skill Usage
-
-## Plan the following feature or task / 规划以下需求或任务
-
+Plan the following feature or task / 规划以下需求或任务:
 $ARGUMENTS
 
-## Required output / 必须输出
+Required output / 必须输出:
 - goal
 - scope
 - assumptions
 - backend/frontend/API/SQL/test/docs impact
 - task breakdown
 - risks
+- suggested order
 - acceptance checklist
