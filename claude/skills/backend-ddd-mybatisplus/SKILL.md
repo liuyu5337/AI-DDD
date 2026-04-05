@@ -4,6 +4,7 @@ description: Pragmatic DDD + Spring Boot 3.x + Java 17 + MyBatis-Plus backend im
 disable-model-invocation: true
 user-invocable: false
 ---
+
 # Backend Pragmatic DDD Rules / 后端务实 DDD 规则
 
 ## Tech Baseline / 技术基线

@@ -1,15 +1,20 @@
 ---
 name: write-tech-doc
-description: Write or update technical documentation aligned to implementation
+description: Write or update a technical document aligned with implementation
 disable-model-invocation: true
 context: fork
 agent: docs-writer
 ---
-Write or update technical documentation for / 为以下内容编写或更新技术文档:
+
+# Skill Usage
+
+## Write or update the following technical document / 编写或更新以下技术文档
 
 $ARGUMENTS
 
-Requirements / 要求:
-- align with actual implementation
-- include API/SQL/test impact where relevant
-- avoid fictional behavior
+## Required output
+- scope
+- design choice
+- impact analysis
+- test / SQL / deployment notes where relevant
+- limitations

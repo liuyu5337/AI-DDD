@@ -1,18 +1,19 @@
 ---
 name: prepare-sql-change
-description: Prepare SQL schema/data change plan and rollback notes
+description: Prepare SQL change scripts and impact notes
 disable-model-invocation: true
 context: fork
 agent: db-helper
 ---
-Prepare SQL change guidance for / 为以下变更准备 SQL 方案:
+
+# Skill Usage
+
+## Prepare the following SQL/database change / 准备以下数据库或 SQL 变更
 
 $ARGUMENTS
 
-Required output:
-- schema/data impact
-- SQL change plan
-- execution order
-- rollback or mitigation
-- risks
-- index suggestions
+## Required output / 必须输出
+- schema impact
+- SQL plan
+- rollback / mitigation
+- compatibility risk

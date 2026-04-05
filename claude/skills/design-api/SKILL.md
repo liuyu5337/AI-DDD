@@ -5,11 +5,14 @@ disable-model-invocation: true
 context: fork
 agent: api-architect
 ---
-Design the API contract for / 设计以下接口合同:
+
+# Skill Usage
+
+## Design the API contract for / 设计以下接口合同
 
 $ARGUMENTS
 
-Required output:
+## Required output
 - API overview
 - endpoint list
 - request models
@@ -17,3 +20,4 @@ Required output:
 - validation rules
 - error model
 - compatibility notes
+- integration notes

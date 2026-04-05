@@ -1,30 +1,33 @@
-# Claude Code Project Template
+# AI-DDD Claude Package (Enhanced)
 
-This template provides a production-oriented `.claude/` structure for:
+This package is an enhanced `.claude/` template rebuilt from the public repository structure you shared and then upgraded with an explicit `rules/` governance layer.
 
-- Spring Boot 3.x + Java 17 + MyBatis-Plus
-- Vue 3 + Element Plus
-- OpenAPI First
-- Pragmatic DDD
-- SQL-script-based DB changes
-- JUnit 5 + Vitest + Vue Test Utils
+## What is included
+- revised `CLAUDE.md`
+- revised `agents/`
+- full `skills/` directory skeleton aligned with your current naming
+- new `rules/` directory for global governance
+- selected `checklists/`, `examples/`, and `templates/`
 
-## Language policy / 语言策略
+## Why this version
+Your current design already has a good separation between:
+- **agents** = task roles
+- **skills** = reusable capability/rule bundles
 
-- Agents: English filename + English `name`
-- Skills: directory-based `SKILL.md`
-- Daily interaction: Chinese is recommended
-- Rule body: bilingual Chinese + English where helpful
-- Skill names: short English names
+The main gap was:
+- many global constraints were still living inside skills
+- there was no explicit **rules layer** to act as repository-wide policy
 
-## How to use / 使用方式
+This package adds that missing layer and makes the precedence explicit.
 
-1. Copy `.claude/` into your repo root.
-2. In macOS Finder, hidden folders may not show by default.
-3. You can also inspect `claude_visible/`, which contains the same content in a visible folder.
+## Suggested load / precedence
+1. `CLAUDE.md`
+2. `rules/*.md`
+3. `agents/*.md`
+4. `skills/**/SKILL.md`
+5. task-specific templates / checklists / examples
 
-## Suggested starting workflow
-
+## Recommended workflow
 - `/plan-feature`
 - `/design-api`
 - `/springboot-ddd-module-scaffold`

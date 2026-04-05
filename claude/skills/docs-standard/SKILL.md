@@ -1,26 +1,23 @@
 ---
 name: docs-standard
-description: Documentation structure and writing standard for this project
+description: Technical documentation expectations for implementation-aligned delivery
 disable-model-invocation: true
 user-invocable: false
 ---
+
 # Documentation Standard / 文档规范
 
-Technical documents should be / 技术文档应当:
-- accurate / 准确
-- structured / 结构化
-- concise / 简洁
-- implementation-aligned / 与实现一致
-- traceable to actual changes / 可追溯到真实变更
+## Core rules
+- documentation must match implementation
+- describe scope and non-goals clearly
+- note API, SQL, test, and deployment impact when relevant
+- explicitly state assumptions and limitations
+- do not invent behavior not implemented
 
-Recommended sections / 建议章节:
+## Recommended sections
 - background
 - scope
-- design
-- API impact
-- SQL impact
-- test impact
-- deployment/rollback impact
-- risks and limitations
-
-Do not invent features or behavior / 不要编造功能或行为。
+- design choice
+- impact analysis
+- operation / rollback
+- known limitations

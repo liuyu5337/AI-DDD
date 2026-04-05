@@ -1,17 +1,19 @@
 ---
 name: run-test-check
-description: Add, run, and analyze JUnit 5 / Vitest tests for a change
+description: Add/run/analyze relevant tests for the selected change
 disable-model-invocation: true
 context: fork
 agent: tester
 ---
-Test the following feature or changed area / 测试以下功能或改动范围:
+
+# Skill Usage
+
+## Run and review relevant tests for / 针对以下内容补充、执行并分析测试
 
 $ARGUMENTS
 
-Required output:
+## Required output
 - test scope
-- added/updated tests
 - execution result
 - failure analysis
 - coverage gaps

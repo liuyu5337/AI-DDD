@@ -1,18 +1,20 @@
 ---
 name: review-changes
-description: Review recent code changes for architecture, quality, and maintainability
+description: Review changed code and identify risks before merge
 disable-model-invocation: true
 context: fork
 agent: reviewer
 ---
-Review the following changes or scope / review 以下改动范围:
+
+# Skill Usage
+
+## Review the following changes / 审查以下变更
 
 $ARGUMENTS
 
-Required output:
+## Required output
 - summary
 - major findings
 - minor findings
 - missing tests
-- suggested improvements
 - verdict

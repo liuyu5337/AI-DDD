@@ -1,8 +1,8 @@
-- [ ] 后端编译通过
-- [ ] 前端构建通过
-- [ ] JUnit 5 相关测试通过
-- [ ] Vitest 相关测试通过
-- [ ] 接口变更已补充 OpenAPI/说明
-- [ ] SQL 脚本与回滚说明齐全（如涉及）
-- [ ] PR 描述完整
-- [ ] 风险与兼容性说明清楚
+# Pre-Merge Checklist
+
+- requirement scope confirmed
+- affected files reviewed
+- tests updated
+- docs updated if needed
+- SQL impact reviewed
+- security-sensitive change reviewed

@@ -1,6 +1,6 @@
 {
   "code": "SUCCESS",
-  "message": "OK",
+  "message": "success",
   "data": {},
-  "requestId": "string"
+  "requestId": "trace-xxx"
 }

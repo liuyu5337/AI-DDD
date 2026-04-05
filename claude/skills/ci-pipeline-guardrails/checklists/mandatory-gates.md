@@ -1,7 +1,8 @@
 # Mandatory Gates
 
-- backend compile pass
-- frontend build pass
-- relevant tests pass
-- PR description complete
-- API/SQL/docs completeness checked when relevant
+- compile/build
+- unit tests
+- lint/style checks
+- migration script review
+- security-sensitive config review
+- packaging / artifact check

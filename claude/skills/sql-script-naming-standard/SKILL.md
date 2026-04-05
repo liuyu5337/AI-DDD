@@ -1,19 +1,19 @@
 ---
 name: sql-script-naming-standard
-description: SQL script directory and naming conventions for schema/data/rollback changes
+description: Sortable SQL script naming conventions
 disable-model-invocation: true
 user-invocable: false
 ---
+
 # SQL Script Naming Standard / SQL 脚本命名规范
 
-## Directory Suggestion / 目录建议
-- db/schema
-- db/data
-- db/rollback
+## Recommendation
+Use sortable names such as:
+- `V20260405_001__customer_table.sql`
+- `V20260405_002__customer_index.sql`
+- `D20260405_001__fix_customer_status.sql`
 
-## Naming Rules / 命名规则
-- Forward scripts: VYYYYMMDD_NNN_description.sql
-- Rollback scripts: RYYYYMMDD_NNN_description.sql
-- Use action-oriented names such as create_table, add_index, init_dict
-- Separate schema changes from data initialization when possible
-- High-risk scripts must include execution notes and rollback guidance / 高风险脚本要写执行与回滚说明
+## Rules
+- schema and data scripts should be distinguishable
+- names should reflect purpose
+- sequence should be sortable

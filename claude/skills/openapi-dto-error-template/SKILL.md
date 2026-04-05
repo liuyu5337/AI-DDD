@@ -1,49 +1,19 @@
 ---
 name: openapi-dto-error-template
-description: Generate OpenAPI-first contract drafts, request/response DTO templates, pagination templates, and error-code templates for backend/frontend aligned development
-context: fork
-agent: api-architect
+description: OpenAPI + DTO + unified response and error templates
 disable-model-invocation: true
+user-invocable: false
 ---
-Generate an OpenAPI-first contract and DTO/error templates for the following requirement / 为以下需求生成 OpenAPI 合同与 DTO/错误码模板:
 
-$ARGUMENTS
+# OpenAPI DTO Error Template / 接口 DTO 与错误模板
 
-Project constraints / 项目约束:
-- OpenAPI First
-- Unified response envelope
-- Stable semantic error codes
-- Frontend-backend separated architecture
-- Spring Boot 3.x backend
-- Vue 3 frontend
-
-You must generate or propose / 你应生成或提出:
-1. Module or endpoint responsibility summary
-2. Endpoint list and HTTP methods
-3. Request DTO draft
-4. Response DTO draft
-5. Unified page response DTO draft where relevant
-6. Unified response envelope example
-7. Shared error-code suggestions
-8. Module-specific error-code suggestions
-9. Validation rules and required fields
-10. Compatibility notes and assumptions
-11. Frontend integration notes
-
-Hard constraints / 强约束:
-- Do not expose persistence DO or MyBatis-Plus types directly
-- Do not leave field meaning ambiguous
-- Do not invent hidden backend behavior without stating assumptions
-- Keep field naming stable and semantically clear
-- Separate shared error codes from module-specific error codes
-- For paginated APIs, use project-defined page response structures
-
-Required output format / 输出格式:
-- summary
-- endpoint draft
+## Use for
 - request DTO template
 - response DTO template
-- page response template if needed
-- unified response example
-- error-code template
-- validation and compatibility notes
+- page response template
+- unified error response template
+
+## Rules
+- field meaning must be explicit
+- response DTO should not mirror persistence objects mechanically
+- include requestId in error envelope when appropriate

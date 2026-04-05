@@ -1,9 +1,10 @@
 ---
 name: response-error-standard
-description: Unified response, error-code, and exception-handling rules for this project
+description: "Unified response, error-code, and exception-handling rules for this project"
 disable-model-invocation: true
 user-invocable: false
 ---
+
 # Response and Error Standard / 响应与错误规范
 
 ## Unified Response / 统一响应

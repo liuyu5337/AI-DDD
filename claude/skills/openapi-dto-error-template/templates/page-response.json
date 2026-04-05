@@ -1,6 +1,11 @@
 {
-  "records": [],
-  "total": 0,
-  "pageNo": 1,
-  "pageSize": 10
+  "code": "SUCCESS",
+  "message": "success",
+  "data": {
+    "records": [],
+    "total": 0,
+    "pageNo": 1,
+    "pageSize": 20
+  },
+  "requestId": "trace-xxx"
 }

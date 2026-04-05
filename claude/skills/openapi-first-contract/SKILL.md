@@ -4,6 +4,7 @@ description: OpenAPI-first API design rules for frontend-backend separated syste
 disable-model-invocation: true
 user-invocable: false
 ---
+
 # OpenAPI First Rules / OpenAPI 先行规则
 
 For new or changed APIs, define first / 新增或修改接口时先定义:

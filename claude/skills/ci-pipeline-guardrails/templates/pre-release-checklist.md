@@ -1,7 +1,7 @@
-- [ ] release 分支已冻结非必要改动
-- [ ] 回归测试完成
-- [ ] SQL 脚本执行顺序确认
-- [ ] 配置变更确认
-- [ ] 回滚方案确认
-- [ ] 版本号 / tag 确认
-- [ ] 关键监控与日志点确认
+# Pre-Release Checklist
+
+- release content frozen
+- DB scripts ordered
+- config changes verified
+- rollback plan prepared
+- smoke test scope identified

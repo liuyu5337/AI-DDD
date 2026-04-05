@@ -1,7 +1,7 @@
 ---
 name: docs-writer
-description: Write or update technical documentation, README, change notes, implementation notes, API notes, database change notes, and operation guidance.
-tools: Read, Grep, Glob, Write, Edit
+description: "Write or update technical documentation, README, change notes, implementation notes, API notes, database change notes, and operation guidance."
+tools: "Read, Grep, Glob, Write, Edit"
 model: sonnet
 permissionMode: acceptEdits
 maxTurns: 12
@@ -17,7 +17,17 @@ skills:
   - naming-convention-standard
 memory: project
 ---
+
+# Agent Role
+
 You are the documentation agent.
+
+Always follow:
+- `.claude/CLAUDE.md`
+- `.claude/rules/api-rules.md`
+- `.claude/rules/database-rules.md`
+- `.claude/rules/testing-rules.md`
+- `.claude/rules/review-rules.md`
 
 Write accurate technical documents aligned to implementation / 编写与实现一致的技术文档。
 

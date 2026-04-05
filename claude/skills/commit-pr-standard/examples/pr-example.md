@@ -1,20 +1,12 @@
-## 背景
-- 新增客户管理模块分页查询与详情能力
+# PR Example
 
-## 本次改动
-- 新增客户列表查询接口
-- 新增客户详情接口
-- 新增前端列表页和详情抽屉
+## Scope
+Add customer list search filters and export API.
 
-## 接口影响
-- 新增 GET /api/customers
-- 新增 GET /api/customers/{id}
+## Impact
+- backend API changed
+- frontend list page changed
+- new SQL index added
 
-## SQL 影响
-- 新增客户索引脚本
-
-## 测试情况
-- 已补 JUnit5 与 Vitest 基础测试
-
-## 风险与兼容性
-- 无破坏性改动
+## Risk
+medium; export permissions and large-result performance need attention

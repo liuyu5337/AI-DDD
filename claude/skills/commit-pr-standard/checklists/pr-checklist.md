@@ -1,8 +1,8 @@
 # PR Checklist
 
-- [ ] commit message clear
-- [ ] PR title clear
-- [ ] API impact documented
-- [ ] SQL impact documented
-- [ ] tests status documented
-- [ ] rollback notes included when needed
+- scope is clear
+- screenshots or API examples attached when helpful
+- tests listed
+- docs impact listed
+- SQL impact listed
+- rollback / compatibility notes listed

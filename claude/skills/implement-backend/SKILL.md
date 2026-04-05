@@ -5,11 +5,14 @@ disable-model-invocation: true
 context: fork
 agent: backend-coder
 ---
-Implement the following backend task / 实现以下后端任务:
+
+# Skill Usage
+
+## Implement the following backend task / 实现以下后端任务
 
 $ARGUMENTS
 
-Requirements / 要求:
+## Requirements / 要求
 - follow OpenAPI-first contract
 - keep controllers thin
 - use pragmatic DDD

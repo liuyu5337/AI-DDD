@@ -1,7 +1,8 @@
 # Release Flow Checklist
 
-- [ ] release branch created from develop
-- [ ] regression completed
-- [ ] release merged to main
-- [ ] release back-merged to develop
-- [ ] tag created
+- branch source is correct
+- target branch is correct
+- release note prepared
+- rollback path known
+- DB change risk reviewed
+- config change risk reviewed
