@@ -1,3 +1,10 @@
+## Working Style
+默认遵循 karpathy-guidelines 风格：
+- Think Before Coding / 编码前思考,先理解再修改
+- Simplicity First / 简洁优先, 优先小步改动
+- Surgical Changes / 精准修改, 避免无关重构
+- Goal-Driven Execution / 目标驱动执行, 明确说明假设、验证和风险
+
 # AI-DDD Repository Contract / 仓库级约定
 
 This repository targets:
